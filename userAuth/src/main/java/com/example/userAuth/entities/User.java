@@ -13,7 +13,8 @@ public class User extends BaseModel{
     private String username;
     private String password;
     private String email;
-    @Enumerated(EnumType.STRING)
+    private String phoneNumber;
+    @OneToMany
     private List<Role> roles;
 }
 

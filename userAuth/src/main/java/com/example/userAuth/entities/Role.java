@@ -1,5 +1,12 @@
 package com.example.userAuth.entities;
 
-public enum Role {
-    USER, ADMIN
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Getter
+@Setter
+public class Role extends BaseModel {
+    private String roleName;
 }
